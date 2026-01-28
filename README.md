@@ -12,6 +12,7 @@ A simple zoom (inspired by [Boomer by tsoding](https://github.com/tsoding/boomer
 ## Dependencies
 
 [SDL3](https://www.libsdl.org/)
+[QT6](https://www.qt.io/)
 
 ## Quick Start
 
