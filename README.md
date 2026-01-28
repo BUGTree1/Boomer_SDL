@@ -8,6 +8,7 @@
 # Boomer SDL
 
 A simple zoom (inspired by [Boomer by tsoding](https://github.com/tsoding/boomer)) crossplatform application written in C++ SDL3 and QT6 that when run takes a screenshot and zooms to where the mouse is. (just close with Alt+F4 or whatever you set in your window manager to close a window)
+I recommend to bind starting Bommer as a hotkey in your window manager.
 
 ## Dependencies
 
