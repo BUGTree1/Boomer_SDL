@@ -1,0 +1,5 @@
+DONE:
+- SDL3 window fullscreen
+
+TODO:
+- take a screenshot with qt6 (https://doc.qt.io/qt-6/qtwidgets-desktop-screenshot-example.html)
