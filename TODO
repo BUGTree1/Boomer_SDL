@@ -2,4 +2,4 @@ DONE:
 - SDL3 window fullscreen
 
 TODO:
-- take a screenshot with qt6 (https://doc.qt.io/qt-6/qtwidgets-desktop-screenshot-example.html)
+- take a screenshot with OS apis (Windows, Linux X11, Linux Wayland)

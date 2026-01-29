@@ -1,16 +1,18 @@
 #include <iostream>
 #include <SDL3/SDL.h>
+#include "screenshot.h"
 
 // expr is some expression that signifies an error when false
-#define SDL_ASSERT(expr) if(!(expr)) { \
-    std::cout << "SDL Error at: " << __FILE__ << ":" << __LINE__ << std::endl; \
+#define SDL_ASSERT(expr) \
+if(!(expr)) { \
+    std::cout << "SDL Error at: " << __FILE__ << ":" << __LINE__ << ": "; \
     std::cout << "SDL_GetError(): " << SDL_GetError() << std::endl; \
     std::exit(1); \
 }
 
 using namespace std;
 
-int main() {
+int main(int argc, char** argv) {
     SDL_ASSERT(SDL_Init(SDL_INIT_VIDEO) != false);
 
     SDL_Window* window = SDL_CreateWindow("Boomer", 0, 0, SDL_WINDOW_HIGH_PIXEL_DENSITY | SDL_WINDOW_FULLSCREEN | SDL_WINDOW_NOT_FOCUSABLE);
@@ -28,7 +30,7 @@ int main() {
     SDL_ASSERT(SDL_SetWindowFullscreenMode(window, display_mode) != false);
     SDL_ASSERT(SDL_SyncWindow(window));
     
-    // TODO: take screenshot
+    // TODO: screenshot
     
     bool running = true;
     SDL_Event event;

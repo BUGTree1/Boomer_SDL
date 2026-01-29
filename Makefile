@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Isrc -lSDL3 -Wall -Wextra -O3 -std=c++17 -Wno-unused-parameter
+CXXFLAGS = -Isrc -I/usr/include/dbus-1.0 -I/usr/lib64/dbus-1.0/include -lSDL3 -Wall -Wextra -O3 -std=c++17 -Wno-unused-parameter
 
 OUT_DIR    = bin
 CXX_SRC    = src/boomer.cpp
